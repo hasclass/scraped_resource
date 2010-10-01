@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "scraped_resource"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Webscraping framework}
+    gem.description = %Q{Webscraping framework}
     gem.email = "sebi.burkhard@gmail.com"
     gem.homepage = "http://github.com/hasclass/scraped_resource"
     gem.authors = ["hasclass"]
