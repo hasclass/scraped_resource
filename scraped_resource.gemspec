@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["hasclass"]
   s.date = %q{2010-10-01}
-  s.description = %q{}
+  s.description = %q{Webscraping framework}
   s.email = %q{sebi.burkhard@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
