@@ -10,7 +10,7 @@ module ScrapedResource
       if key.to_s == 'list'
         @list_remote, @list_mapper = hsh.keys.first, hsh.values.first
       else
-        
+
       end
     end
 

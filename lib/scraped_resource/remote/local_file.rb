@@ -33,13 +33,17 @@ module ScrapedResource::Remote
     #
     def download_and_save(pages = nil)
       # already downloaded
-      Dir[base_path+"/*"].select do |f| 
+      entries_in_base_path.select do |f| 
         if file_regexp
           f.split('/').last =~ file_regexp
         else
           true
         end
       end
+    end
+
+    def entries_in_base_path
+      Dir[base_path+"/*"]
     end
 
     def base_path
