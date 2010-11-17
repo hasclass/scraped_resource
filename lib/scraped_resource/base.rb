@@ -10,7 +10,7 @@ module ScrapedResource
       if key.to_s == 'list'
         @list_remote, @list_mapper = hsh.keys.first, hsh.values.first
       else
-
+        
       end
     end
 
@@ -22,11 +22,11 @@ module ScrapedResource
 
     def documents
       arr = []
-      each_document {|d| arr << d}
+      each_mapper {|d| arr << d}
       arr
     end
 
-    def each_document(&block)
+    def each_mapper(&block)
       return unless block_given?
       remote_resource = self.class.list_remote.new 
       files = remote_resource.download_and_save
@@ -40,7 +40,7 @@ module ScrapedResource
     #
     def all
       arr = []
-      each_document do |document|
+      each_mapper do |document|
         arr << document.to_a
       end
       arr.flatten

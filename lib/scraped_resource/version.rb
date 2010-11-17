@@ -1,9 +1,9 @@
 module ScrapedResource
   module VERSION #:nodoc:
     MAJOR = 0
-    MINOR = 0
-    TINY  = 1
-    BUILD = "alpha"
+    MINOR = 1
+    TINY  = 0
+    BUILD = "beta"
 
     STRING = [MAJOR, MINOR, TINY, BUILD].join('.')
   end

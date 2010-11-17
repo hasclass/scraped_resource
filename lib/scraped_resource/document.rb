@@ -6,6 +6,18 @@ module ScrapedResource
       @file_name = file_name
     end
 
+    def file_path
+      file_name
+    end
+
+    def file_path_only
+      file_name.split('/')[0..-2].join('/')
+    end
+
+    def file_name_only
+      file_name.split('/').last
+    end
+
     ##
     # {:nav => 2, :other_column_name => 3}
     #
